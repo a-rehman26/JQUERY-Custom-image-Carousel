@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="page-header">
+      <h1>Responsive Image Gallery</h1>
+      <p>A jQuery image gallery with a thumbnail carousel</p>
+    </div>
+
+    <div class="gallery-container">
+      <!-- TOP THUMBNAIL BAR -->
+      <div class="thumb-wrapper">
+        <button class="thumb-prev arrow-small">&#10094;</button>
+
+        <div class="thumb-carousel">
+          <!-- IMPORTANT: Add data-large + data-caption -->
+          <img
+            class="thumb active"
+            src="images/carousel image 1.jpg"
+            data-large="images/carousel image 1.jpg"
+            data-caption="BEAUTIFUL GREEN LEAF WITH WATER DROPLETS"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 2.jpg"
+            data-large="images/carousel image 2.jpg"
+            data-caption="CHILDHOOD MOMENTS CAPTURED IN TIME"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 3.jpg"
+            data-large="images/carousel image 3.jpg"
+            data-caption="PEACEFUL MORNING ABOVE THE CITY"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 4.jpg"
+            data-large="images/carousel image 4.jpg"
+            data-caption="MODERN INTERIOR WITH SOFT LIGHTING"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 5.jpg"
+            data-large="images/carousel image 5.jpg"
+            data-caption="WARM GOLD HUES OVER ROUND TEXTURES"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 6.jpg"
+            data-large="images/carousel image 6.jpg"
+            data-caption="CAPTURING LIFE THROUGH A CAMERA LENS"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 7.jpg"
+            data-large="images/carousel image 7.jpg"
+            data-caption="WATER LILY FLOATING ON STILL POND"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 8.jpg"
+            data-large="images/carousel image 8.jpg"
+            data-caption="EVENING WALK IN THE COUNTRYSIDE"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 4.jpg"
+            data-large="images/carousel image 4.jpg"
+            data-caption="NATURE’S SOFT GREEN TONES"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 9.jpg"
+            data-large="images/carousel image 9.jpg"
+            data-caption="CURIOUS CHILD LOOKING INTO THE CAMERA"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 10.jpg"
+            data-large="images/carousel image 10.jpg"
+            data-caption="TINY LEAF RESTING IN A GENTLE HAND"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 11.jpg"
+            data-large="images/carousel image 11.jpg"
+            data-caption="SINGER CAPTURED IN A PASSIONATE MOMENT"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 12.jpg"
+            data-large="images/carousel image 12.jpg"
+            data-caption="PORTRAIT WITH WARM AND MOODY COLORS"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 13.jpg"
+            data-large="images/carousel image 13.jpg"
+            data-caption="A VIBRANT SNAPSHOT OF EVERYDAY LIFE"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 11.jpg"
+            data-large="images/carousel image 11.jpg"
+            data-caption="TRUE HUMAN EMOTION CAPTURED NATURALLY"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 15.jpg"
+            data-large="images/carousel image 15.jpg"
+            data-caption="A BEAUTIFUL CLOSE-UP OF DAILY OBJECTS"
+          />
+
+          <img
+            class="thumb"
+            src="images/carousel image 10.jpg"
+            data-large="images/carousel image 10.jpg"
+            data-caption="URBAN SKYLINE WITH VIBRANT COLORS"
+          />
+        </div>
+
+        <button class="thumb-next arrow-small">&#10095;</button>
+      </div>
+
+      <!-- MAIN IMAGE VIEW -->
+      <div class="main-view">
+        <button class="main-prev arrow-btn">&#10094;</button>
+
+        <div class="main-image-box">
+          <img id="mainImage" src="images/carousel image 1.jpg" />
+          <p id="imgCaption" class="caption-text">
+            BEAUTIFUL GREEN LEAF WITH WATER DROPS
+          </p>
+        </div>
+
+        <button class="main-next arrow-btn">&#10095;</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
