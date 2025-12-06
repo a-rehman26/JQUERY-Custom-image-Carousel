@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    /* TOP CAROUSEL CONTROLS */
     $(".thumb-prev").click(function () {
         let c = $(".thumb-carousel");
         c.animate({ scrollLeft: c.scrollLeft() - 200 }, 300);
@@ -11,7 +10,6 @@ $(document).ready(function () {
         c.animate({ scrollLeft: c.scrollLeft() + 200 }, 300);
     });
 
-    /* THUMBNAIL + MAIN VIEW LOGIC */
     let thumbs = $(".thumb");
     let currentIndex = 0;
     let isAnimating = false;
