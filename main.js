@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    // === THUMB CAROUSEL MOVE ===
     $(".thumb-prev").click(function () {
         let c = $(".thumb-carousel");
         c.animate({ scrollLeft: c.scrollLeft() - 200 }, 300);
@@ -35,7 +36,6 @@ $(document).ready(function () {
             scrollThumbnailIntoView(index);
 
             setTimeout(() => { isAnimating = false; }, 450);
-
         }, 150);
     }
 
@@ -63,14 +63,15 @@ $(document).ready(function () {
         updateMainImage(currentIndex);
     });
 
+    // === GRID/LIST VIEW FIXED ===
     $("#hideThumbs").click(function () {
-        $(".thumb-wrapper").slideUp(300);
+        $(".thumb-carousel-wrapper").slideUp(300);
         $(this).addClass("active");
         $("#showThumbs").removeClass("active");
     });
 
     $("#showThumbs").click(function () {
-        $(".thumb-wrapper").slideDown(300);
+        $(".thumb-carousel-wrapper").slideDown(300);
         $(this).addClass("active");
         $("#hideThumbs").removeClass("active");
     });
