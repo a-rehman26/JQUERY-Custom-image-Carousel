@@ -19,26 +19,23 @@
   </head>
 
   <body>
-    <div class="page-header text-center pt-4">
-      <h1>Responsive Image Gallery</h1>
-      <p>A jQuery image gallery with a thumbnail carousel</p>
-    </div>
+    <div class="gallery-wrapper">
+      <div class="gallery-header">
+        <h1>Responsive Image Gallery</h1>
+        <p>A jQuery image gallery with a thumbnail carousel</p>
+      </div>
 
-    <div class="container gallery-container">
       <div class="view-toggle">
-        <button id="showThumbs" class="view-btn active" title="Show Thumbnails">
+        <button id="viewGrid" class="view-btn active">
           <span class="icon-grid"></span>
         </button>
-
-        <button id="hideThumbs" class="view-btn" title="Hide Thumbnails">
+        <button id="viewSingle" class="view-btn">
           <span class="icon-single"></span>
         </button>
       </div>
 
-      <div class="thumb-wrapper mt-3">
-        <button class="thumb-prev arrow-small">&#10094;</button>
-
-        <!-- top carousel coding  -->
+      <div class="thumb-carousel-wrapper">
+        <button class="thumb-prev arrow-small">❮</button>
 
         <div class="thumb-carousel">
           <img
@@ -161,21 +158,26 @@
           />
         </div>
 
-        <button class="thumb-next arrow-small">&#10095;</button>
+        <button class="thumb-next arrow-small">❯</button>
       </div>
 
-      <!-- main carousel coding  -->
-      <div class="main-view mt-4">
-        <button class="main-prev arrow-btn">&#10094;</button>
-
-        <div class="main-image-box">
-          <img id="mainImage" class="show" src="images/main_image_1.jpg" />
-          <p id="imgCaption" class="caption-text">
-            BEAUTIFUL GREEN LEAF WITH WATER DROPLETS
-          </p>
+      <div class="main-display-wrapper">
+        <!-- LEFT ARROW OUTSIDE IMAGE -->
+        <div class="arrow-container left">
+          <button class="main-prev arrow-btn">❮</button>
         </div>
 
-        <button class="main-next arrow-btn">&#10095;</button>
+        <div class="main-image-container">
+          <img id="mainImage" src="images/main_image_1.jpg" />
+        </div>
+
+        <div class="arrow-container right">
+          <button class="main-next arrow-btn">❯</button>
+        </div>
+      </div>
+
+      <div class="caption-wrapper">
+        <p id="imgCaption">BEAUTIFUL GREEN LEAF WITH WATER DROPLETS</p>
       </div>
     </div>
 
